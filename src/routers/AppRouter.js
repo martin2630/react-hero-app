@@ -15,7 +15,7 @@ export const AppRouter = () => {
   const { user: { logged } } = useContext(AuthContext);
 
   return (
-    <Router>
+    <Router basename={'/react-hero-app'}>
       <div>
 
         <Switch>
