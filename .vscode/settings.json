@@ -1,0 +1,12 @@
+{
+  "emment.sintaxProfiles": {
+      "javacript": "jsx"
+  },
+  "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+    },
+  "emmet.triggerExpansionOnTab": true,
+  "editor.fontSize": 14,
+  "editor.tabSize": 2
+
+}
