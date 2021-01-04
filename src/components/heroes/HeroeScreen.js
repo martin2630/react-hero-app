@@ -6,7 +6,6 @@ export const HeroeScreen = ({ history }) => {
   const { heroId } = useParams();
   // const hero = getHeroesById(heroId);
   const hero = useMemo(() => getHeroesById(heroId), [heroId])
-  console.log("me cree tambien");
   if (!hero) return <Redirect to="/" />;
 
   const { 
@@ -26,7 +25,7 @@ export const HeroeScreen = ({ history }) => {
     <div className="row mt-5 animate__animated animate__fadeIn">
       <div className="col-lg-4">
         <img 
-          src={ `../assets/heroes/${heroId}.jpg` }
+          src={ `${process.env.PUBLIC_URL}/assets/heroes/${heroId}.jpg` }
           alt={superhero}
           className="img-thumbnail" />
       </div>
